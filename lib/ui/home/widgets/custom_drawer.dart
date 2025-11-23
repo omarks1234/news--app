@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -109,6 +110,13 @@ class CustomDrawer extends StatelessWidget {
                 ),
                 SizedBox(height: 8.h),
                 DropdownMenu<String>(
+                  onSelected: (value) {
+                    if (value == "english")
+                      context.setLocale(Locale("en")) ;
+                      else
+                      context.setLocale(Locale("ar")) ;
+
+                  },
                   width: 237.w,
                   trailingIcon: Icon(Icons.arrow_drop_down , size: 30.r, color: ColorManager.primaryDarkColor,),
                   selectedTrailingIcon: Icon(Icons.arrow_drop_up , size: 30.r, color: ColorManager.primaryDarkColor,),
