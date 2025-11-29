@@ -4,5 +4,7 @@ abstract final class StringsManager {
  static const String theme = "Theme" ;
  static const String language = "Language" ;
  static const String home = "home" ;
+ static const String newsGreetings  = '''Good Morning
+Here is Some News For You''' ;
 
 }

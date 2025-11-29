@@ -2,6 +2,7 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:news_app/core/resources/stringsManager.dart';
 import 'package:news_app/ui/home/widgets/custom_drawer.dart';
+import 'package:news_app/ui/home/widgets/home_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -12,6 +13,7 @@ class HomeScreen extends StatelessWidget {
       appBar: AppBar(
        title: Text(StringsManager.home.tr()),
       ),
+      body: HomeWidget(),
 
 
     );
